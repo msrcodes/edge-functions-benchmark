@@ -8,7 +8,7 @@ interface ResultsProps {
 
 const Results = ({results, type}: ResultsProps) => {
   return (
-    <div className="border border-blue-500 bg-slate-200 dark:bg-slate-800 shadow-lg p-2 rounded-lg">
+    <div className="border-2 border-blue-500 bg-slate-200 dark:bg-slate-800 shadow-lg p-2 rounded-lg">
       <h2 className="text-xl font-bold">{type} Results</h2>
       <p>
         <span className="font-bold">{type} Average:</span>{' '}

@@ -1,18 +1,12 @@
 # 🦁 Edge Functions Benchmark
 [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
+[![Vercel](https://img.shields.io/badge/vercel-hosting-9cf)](https://edge-functions-benchmark.vercel.app/)
 
 A benchmark for edge functions on Vercel.
 
 This application runs a benchmark to compare:
 - Computations ran and returned by an edge network
 - Computations ran and returned by a typical cloud network
-
-<!-- ## ✨ Features
-
-- [Next.js 12](https://nextjs.org/), for all your production-ready React SSR (or Static) needs
-- [Google TypeScript Style](https://github.com/google/gts), for consistent, readable code
-- [Husky](https://www.npmjs.com/package/husky), for pre-commit linting and build checks
-- [Issue Templates](./.github/ISSUE_TEMPLATE/feature-request.md), to get you up and running in Open Source quickly -->
 
 ## 📄 Scripts
 
@@ -66,26 +60,3 @@ Use this table to store and describe the environment variables used in your appl
 |-----------------|------------------------------------------------|----------|
 | PORT            | The port that the application runs on.         | No       |
 | NEXT_PUBLIC_FOO | An example value.                              | No       |
-
-
-## ☁️ Hosting
-
-This project comes with support for Firebase Hosting out of the box. This consists of:
-
-* A root `firebase.json` file that holds the configuration for Firebase Hosting
-* A `.github/workflows/firebase-hosting.yml` file, the GitHub Action that deploys your application to the Web
-
-To use the application, provide your secret keys in the format specified on your repository's secrets.
-
-You can find these by going to `Settings -> Secrets -> New Repository Secret`.
-
-| Key                          | Required |
-|------------------------------|----------|
-| FIREBASE_SERVICE_ACCOUNT     | Yes      |
-| FIREBASE_PROJECT_ID          | Yes      |
-| FIREBASE_API_KEY             | No       |
-| FIREBASE_AUTH_DOMAIN         | No       |
-| FIREBASE_STORAGE_BUCKET      | No       |
-| FIREBASE_MESSAGING_SENDER_ID | No       |
-| FIREBASE_APP_ID              | No       |
-| FIREBASE_MEASUREMENT_ID      | No       |

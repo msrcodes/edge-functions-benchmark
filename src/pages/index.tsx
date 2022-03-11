@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Link from 'next/link';
 import {useEffect, useState} from 'react';
 import Results from '../components/Results';
 
@@ -78,10 +79,17 @@ const Homepage = () => {
         Edge Functions Comparison
       </h1>
       <p className="pb-8">
-        The same request is made {THRESHOLD} times of nodes on a cloud network
-        and nodes on an edge network. The duration of the request is then
-        measured and recorded.
+        The same request is made {THRESHOLD} times to nodes on a cloud network
+        and nodes on{' '}
+        <Link
+          href="https://vercel.com/docs/concepts/edge-network/overview"
+          passHref
+        >
+          <a className="underline">an edge network</a>
+        </Link>
+        . The duration of the request is then measured and recorded.
       </p>
+      <p className="pb-8">Reload the page to make another set of requests!</p>
       {cloudResults.length && edgeResults.length ? (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Results type="Cloud" results={cloudResults} />
