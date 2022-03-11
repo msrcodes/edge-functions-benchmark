@@ -1,9 +1,8 @@
 {
-  "name": "gdscports-boilerplate-next",
+  "name": "edge-functions-benchmark",
   "version": "1.0.0",
-  "description": "A boilerplate for projects using Next.js and TypeScript.",
-  "main": "index.js",
-  "repository": "git@github.com:gdscports/admins-2021-boilerplate-next-BNXT.git",
+  "description": "Edge functions benchmark for final year Distributed Systems coursework",
+  "repository": "git@github.com:mikaelsrozee/edge-functions-benchmark.git",
   "author": "Mikael Rozee <mikaelsrozee@gmail.com>",
   "license": "UNLICENSED",
   "private": false,

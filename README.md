@@ -1,14 +1,18 @@
-# 🦁 Next.js Boilerplate
+# 🦁 Edge Functions Benchmark
 [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 
-A boilerplate for projects using Next.js and TypeScript.
+A benchmark for edge functions on Vercel.
 
-## ✨ Features
+This application runs a benchmark to compare:
+- Computations ran and returned by an edge network
+- Computations ran and returned by a typical cloud network
+
+<!-- ## ✨ Features
 
 - [Next.js 12](https://nextjs.org/), for all your production-ready React SSR (or Static) needs
 - [Google TypeScript Style](https://github.com/google/gts), for consistent, readable code
 - [Husky](https://www.npmjs.com/package/husky), for pre-commit linting and build checks
-- [Issue Templates](./.github/ISSUE_TEMPLATE/feature-request.md), to get you up and running in Open Source quickly
+- [Issue Templates](./.github/ISSUE_TEMPLATE/feature-request.md), to get you up and running in Open Source quickly -->
 
 ## 📄 Scripts
 
