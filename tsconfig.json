@@ -11,7 +11,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "lib": ["ES2018", "DOM"]
   },
   "include": [
     "src/**/*.ts",
