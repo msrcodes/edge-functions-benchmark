@@ -82,10 +82,14 @@ const Homepage = () => {
         and nodes on an edge network. The duration of the request is then
         measured and recorded.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Results type="Cloud" results={cloudResults} />
-        <Results type="Edge" results={edgeResults} />
-      </div>
+      {cloudResults.length && edgeResults.length ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Results type="Cloud" results={cloudResults} />
+          <Results type="Edge" results={edgeResults} />
+        </div>
+      ) : (
+        <h2>Processing requests...</h2>
+      )}
     </main>
   );
 };
