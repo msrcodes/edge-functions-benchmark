@@ -1,6 +1,7 @@
 const Homepage = () => (
   <main>
-    <h1>Hello World!</h1>
+    <h1>Edge Functions Comparison</h1>
+    {/* TODO: Benchmark */}
   </main>
 );
 
