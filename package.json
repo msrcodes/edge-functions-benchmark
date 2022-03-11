@@ -1,0 +1,41 @@
+{
+  "name": "gdscports-boilerplate-next",
+  "version": "1.0.0",
+  "description": "A boilerplate for projects using Next.js and TypeScript.",
+  "main": "index.js",
+  "repository": "git@github.com:gdscports/admins-2021-boilerplate-next-BNXT.git",
+  "author": "Mikael Rozee <mikaelsrozee@gmail.com>",
+  "license": "UNLICENSED",
+  "private": false,
+  "scripts": {
+    "build": "next build",
+    "clean": "gts clean",
+    "dev": "next dev",
+    "export": "next export",
+    "fix": "gts fix",
+    "lint": "gts lint",
+    "prepare": "husky install",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-angular": "^13.1.0",
+    "@next/eslint-plugin-next": "^12.0.1",
+    "@types/node": "^14.11.2",
+    "@types/react": "^17.0.19",
+    "eslint": "^7.32.0",
+    "gts": "^3.1.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "next": "^12.1.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "next-seo": "^4.28.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "yarn lint"
+  }
+}
