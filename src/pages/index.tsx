@@ -1,7 +1,8 @@
 import axios from 'axios';
 import {useEffect, useState} from 'react';
+import Results from '../components/Results';
 
-interface Result {
+export interface Result {
   value: number | String;
   duration: number;
 }
@@ -72,50 +73,19 @@ const Homepage = () => {
   }, []);
 
   return (
-    <main>
-      <h1>Edge Functions Comparison</h1>
-      <h2>Cloud Results</h2>
-      <p>
-        Cloud Average:{' '}
-        {cloudResults.length > 0
-          ? cloudResults.reduce((prev, cur) => ({
-              duration: prev.duration + cur.duration,
-              value: -1,
-            })).duration / cloudResults.length
-          : 'ERROR'}{' '}
-        ms
+    <main className="max-w-5xl m-auto p-8">
+      <h1 className="text-2xl font-extrabold pb-8">
+        Edge Functions Comparison
+      </h1>
+      <p className="pb-8">
+        The same request is made {THRESHOLD} times of nodes on a cloud network
+        and nodes on an edge network. The duration of the request is then
+        measured and recorded.
       </p>
-      {cloudResults.map(({value, duration}, i) => {
-        return (
-          <div key={`cloud-${value}-${i}`}>
-            <h3>
-              Result {i} ({value})
-            </h3>
-            <div>{duration} ms</div>
-          </div>
-        );
-      })}
-      <h2>Edge Results</h2>
-      <p>
-        Edge Average:{' '}
-        {edgeResults.length > 0
-          ? edgeResults.reduce((prev, cur) => ({
-              duration: prev.duration + cur.duration,
-              value: -1,
-            })).duration / edgeResults.length
-          : 'ERROR'}{' '}
-        ms
-      </p>
-      {edgeResults.map(({value, duration}, i) => {
-        return (
-          <div key={`edge-${value}-${i}`}>
-            <h3>
-              Result {i} ({value})
-            </h3>
-            <div>{duration} ms</div>
-          </div>
-        );
-      })}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <Results type="Cloud" results={cloudResults} />
+        <Results type="Edge" results={edgeResults} />
+      </div>
     </main>
   );
 };
